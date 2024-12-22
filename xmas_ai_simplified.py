@@ -247,8 +247,7 @@ def fire_catapult():
     for iLoad in range(45,160,3):
         write_command([iLoad, 0, 150, 0], [0, 0, 0, 0]) 
         time.sleep(0.05)
-    time.sleep(1)
-    time.sleep(3)
+
     countdown(10)
     time.sleep(2)
 
@@ -262,7 +261,6 @@ def fire_catapult():
     time.sleep(2)
     write_command([45, 0, 150, 0], [0, 0, 0, 0]) 
     time.sleep(2)
-
 
 def countdown(number):
     for iCountdown in range(number,0,-1):
