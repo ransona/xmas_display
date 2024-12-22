@@ -60,7 +60,7 @@ max_light_run_time = 30 # seconds
 min_light_run_time = 10 # seconds
 # OpenAI API Key
 
-client = OpenAI()
+# client = OpenAI()
 
 # Initialize the webcam
 # cap = cv2.VideoCapture(0)
