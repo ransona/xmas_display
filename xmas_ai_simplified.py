@@ -83,16 +83,6 @@ for port in ports:
         print(f"Failed to connect on port {port.device}: {e}")
         sys.exit()
 
-if arduino:
-    # Test communication (optional)
-    arduino.write(b'Test\n')
-    response = arduino.readline()
-    print(f"Arduino Response: {response}")
-else:
-    print("No Arduino found. Check the connection.")
-    sys.exit()
-
-
 def write_command(servo_positions, output_states):
     command = f"S{servo_positions[0]},{servo_positions[1]},{servo_positions[2]},{servo_positions[3]};D{output_states[0]},{output_states[1]},{output_states[2]},{output_states[3]}\n"
     arduino.write(bytes(command, 'utf-8'))
