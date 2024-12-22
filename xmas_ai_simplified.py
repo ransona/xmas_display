@@ -247,7 +247,7 @@ def fire_catapult():
     write_command([160, 90, 150, 0], [0, 0, 0, 0])
     # # knock it back
     write_command([0, 90, 150, 0], [0, 0, 0, 0]) 
-    play_mp3("catapult.aac")
+    play_mp3("Catapult.aac")
     write_command([45, 0, 150, 0], [0, 0, 0, 0]) 
     time.sleep(2)
     # lock it
